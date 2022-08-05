@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agent", "Agent\Agent.csproj", "{98A8DF30-0993-4B49-822E-244A70AB8C4D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{162C54FB-FEEC-490B-9105-103AD30A10F7} = {162C54FB-FEEC-490B-9105-103AD30A10F7}
+		{6B726FC4-A907-4813-BF38-3342E02AA8D2} = {6B726FC4-A907-4813-BF38-3342E02AA8D2}
+		{75EC5DCD-DC76-4799-8623-206B1F73CA95} = {75EC5DCD-DC76-4799-8623-206B1F73CA95}
+		{B04A1728-2E87-491E-BC7F-F575A1754DEF} = {B04A1728-2E87-491E-BC7F-F575A1754DEF}
+		{FF7FD66A-B3E2-4D39-A457-A00C94EDE9E6} = {FF7FD66A-B3E2-4D39-A457-A00C94EDE9E6}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{2CAC9A2B-1402-465F-83F8-958B4E081CA3}"
 	ProjectSection(SolutionItems) = preProject
@@ -25,14 +32,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{D96B47
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desktop.Core", "Desktop.Core\Desktop.Core.csproj", "{B04A1728-2E87-491E-BC7F-F575A1754DEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75EC5DCD-DC76-4799-8623-206B1F73CA95} = {75EC5DCD-DC76-4799-8623-206B1F73CA95}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{3B1B36AE-7A60-4974-A868-1E24894D4149}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desktop.XPlat", "Desktop.XPlat\Desktop.XPlat.csproj", "{FF7FD66A-B3E2-4D39-A457-A00C94EDE9E6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desktop.Win", "Desktop.Win\Desktop.Win.csproj", "{6B726FC4-A907-4813-BF38-3342E02AA8D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75EC5DCD-DC76-4799-8623-206B1F73CA95} = {75EC5DCD-DC76-4799-8623-206B1F73CA95}
+		{FF7FD66A-B3E2-4D39-A457-A00C94EDE9E6} = {FF7FD66A-B3E2-4D39-A457-A00C94EDE9E6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent.Installer.Win", "Agent.Installer.Win\Agent.Installer.Win.csproj", "{A3D0368C-0850-4614-B5B5-41B9D5135AA9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3B1B36AE-7A60-4974-A868-1E24894D4149} = {3B1B36AE-7A60-4974-A868-1E24894D4149}
+		{98A8DF30-0993-4B49-822E-244A70AB8C4D} = {98A8DF30-0993-4B49-822E-244A70AB8C4D}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Tests", "Tests\Server.Tests\Server.Tests.csproj", "{48D9D0E6-5781-44A9-84C0-56F56C2A1193}"
 EndProject
@@ -48,12 +66,15 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{75EC5DCD-DC76-4799-8623-206B1F73CA95}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Installer", "Server.Installer\Server.Installer.csproj", "{BE7799D6-204C-4D35-83E7-7FB24DEBAE94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3D0368C-0850-4614-B5B5-41B9D5135AA9} = {A3D0368C-0850-4614-B5B5-41B9D5135AA9}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desktop.Win.Tests", "Tests\Desktop.Win.Tests\Desktop.Win.Tests.csproj", "{162C54FB-FEEC-490B-9105-103AD30A10F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0754E195-7080-4AAC-B5A3-A9923B1283CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Tests", "Tests\Shared.Tests\Shared.Tests.csproj", "{B6C1030D-1F74-4143-BB70-FC79C0274653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Tests", "Tests\Shared.Tests\Shared.Tests.csproj", "{B6C1030D-1F74-4143-BB70-FC79C0274653}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -199,7 +199,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>cd $(outDir)
+xcopy *.exe ..\..\..\baseOut\wwwroot\Content /E/C/I/Y</PostBuildEvent>
   </PropertyGroup>
 </Project>
